@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stack visualizer</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="stack-heading">STACK EXECUTION</h1>
+    <div class="content">
+        <label for="text">Enter the Element To Be Pushed</label>
+        <input type="text" name="element" id="text" required> 
+        <div class="buttons">
+            <button type="button" class="btn-push" id="push" onclick="Push()">PUSH</button>
+            <button id="pop" onclick="Pop()" type="button" class="btn-pop">POP </button>
+        </div>
+
+        <div id="stack">Elements of the Stack Are:-  (Default Stack)
+            <ul id="list"></ul>
+        </div>
+    
+        <div id="pop_stack">The Elements Popped Out Of The Stack Are:-
+            <ul id="list1"></ul>
+        
+        </div>
+
+        <div class="intro">
+            <div class="intro-headig">
+                <h3> What is stack</h3>
+            </div>
+            <div class="intro-content">
+                <p> Stack is a linear data structure that follows a particular order in which  the operations are 
+                    <br>  performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+                    <br> LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.</p>
+            </div>
+        <div class="info">
+            <div class="info-headig">
+                <h3> How it works</h3>
+            </div>
+            <div class="intro-content">
+                <p> Enter the elememt in the box
+                <br>There is default stack with three elements    
+                <br> --> if you press the push (green color) button the element fixed at top(first) of stack 
+                <br>--> if you press the pop(red color) button the last element is removed from stack 
+                <br> At last you can see removed elements also </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="attribution">
+           
+          Coded by <a href="https://github.com/rohit0033">Rohit Sharma</a>.
+        </p>
+      </footer> 
+    <script src="script.js"></script>
+</body>
+</html>
